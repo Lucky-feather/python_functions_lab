@@ -5,13 +5,12 @@ def sum_to(n):
     if count == n :
       print(total)
       return total
-      break
     else :
-      #print(f'count: {count} / total: {total}')
       total = (total + count + 1)
       count += 1
 
-sum_to(6)
+
+#sum_to(6)
 
 #----------------------------
 
@@ -23,7 +22,13 @@ def largest(*args) :
   print(high_num)
   return high_num
 
-#largest(1,3,45,7,9,0)
+  ## ** alternate answer below
+
+# def largest(*args) :
+#   print(max(args))
+#   return max(args)
+
+#largest(1,3,45,7,98,0)
 
 #-----------------------------
 
@@ -31,6 +36,15 @@ def occurences(str1, str2) :
   print(str1.count(str2))
   return str1.count(str2)
 
-#occurences('abcd beeb', 'ee')
+#occurences('banana candy', 'an')
 
 #---------------------------------
+
+def product(*args) :
+  total = 1
+  for arg in args:
+    total = total * arg
+  print(total)
+  return total
+
+product(4, 0.5, 5)
