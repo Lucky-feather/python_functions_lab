@@ -9,7 +9,6 @@ def sum_to(n):
       total = (total + count + 1)
       count += 1
 
-
 #sum_to(6)
 
 #----------------------------
@@ -47,4 +46,4 @@ def product(*args) :
   print(total)
   return total
 
-product(4, 0.5, 5)
+#product(4, 0.5, 5)
